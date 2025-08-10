@@ -30,7 +30,7 @@ public class Controller {
             ps.setString(3, job); // set jobTitle parameter
             rs = ps.executeQuery(); // execute query
 
-            return rs.next(); // return true if a record is found
+            return rs.next();
         } catch (SQLException ex) {
             Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex); // log exception
             return false; // on error, return false
